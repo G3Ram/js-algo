@@ -18,8 +18,15 @@
  * @param {string} S
  * @return {string}
  */
+// var removeVowels = function (S) {
+//   return [...S].filter((val) => !"aeiou".includes(val.toLowerCase())).join("");
+// };
+
+// console.log(removeVowels("podaanga"));
+
+// SOLUTION 3
 var removeVowels = function (S) {
-  return [...S].filter((val) => !"aeiou".includes(val.toLowerCase())).join("");
+  return S.replace(/a|e|i|o|u/g, "");
 };
 
 console.log(removeVowels("podaanga"));
