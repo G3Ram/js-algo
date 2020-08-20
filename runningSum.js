@@ -4,7 +4,6 @@
  */
 var runningSum = function (nums) {
   let newArr = [];
-  let temp;
   if (nums.length > 0) {
     let total = 0;
     for (let i = 0; i < nums.length; i++) {
