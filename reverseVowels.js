@@ -3,6 +3,8 @@
  * @return {string}
  */
 var reverseVowels = function (s) {
+  const sArr = s.split("");
+  // find vowels in the string
   return s;
 };
 
