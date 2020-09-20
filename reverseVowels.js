@@ -17,7 +17,7 @@ var reverseVowels = function (s) {
     const a = sArr.indexOf("");
     sArr[a] = vowels[i];
   }
-  console.log(`----- ${sArr} ------ ${vowels} -----`);
+
   return sArr.join("");
 };
 
