@@ -10,10 +10,17 @@
 function capitalize(str) {
   const strArr = str.split(" ");
   for (let i = 0; i < strArr.length; i++) {
-    strArr[i] =
-      strArr[i].substr(0, 1).toUpperCase() +
-      strArr[i].substring(1, strArr[i].length);
+    strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1);
   }
   return strArr.join(" ");
 }
 module.exports = capitalize;
+
+// SOLUTION 1
+// const strArr = str.split(" ");
+// for (let i = 0; i < strArr.length; i++) {
+//   strArr[i] =
+//     strArr[i].substr(0, 1).toUpperCase() +
+//     strArr[i].substring(1, strArr[i].length);
+// }
+// return strArr.join(" ");
