@@ -14,6 +14,16 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
-
+function pyramid(n) {
+  const lenVal = (n - 1) * 2 + 1;
+  const pyra = new Array(lenVal).fill(" ");
+  let mid = 0;
+  for (let i = 0; i < n; i++) {
+    mid = Math.floor(lenVal / 2);
+    for (let j = mid - i; j <= mid + i; j++) {
+      pyra[j] = "#";
+    }
+    console.log(pyra.join(""));
+  }
+}
 module.exports = pyramid;
