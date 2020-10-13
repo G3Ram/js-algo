@@ -15,7 +15,7 @@
 //       '#####'
 
 function pyramid(n) {
-  const lenVal = (n - 1) * 2 + 1;
+  const lenVal = n * 2 - 1;
   const pyra = new Array(lenVal).fill(" ");
   let mid = 0;
   for (let i = 0; i < n; i++) {
