@@ -7,19 +7,20 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {
-  let vowels = {};
-  for (let char of str) {
-    if (char.match(/[aeiouAEIOU]/g)) {
-      vowels[char] = vowels[char] ? vowels[char] + 1 : 1;
-    }
-  }
-
-  let result = 0;
-  for (let char in vowels) {
-    result += vowels[char];
-  }
-  return result;
-}
+function vowels(str) {}
 
 module.exports = vowels;
+
+// SOLUTION 1
+// let vowels = {};
+// for (let char of str) {
+//   if (char.match(/[aeiouAEIOU]/g)) {
+//     vowels[char] = vowels[char] ? vowels[char] + 1 : 1;
+//   }
+// }
+
+// let result = 0;
+// for (let char in vowels) {
+//   result += vowels[char];
+// }
+// return result;
