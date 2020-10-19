@@ -16,7 +16,12 @@
 //     [10,  9,  8, 7]]
 
 function matrix(n) {
-  console.log(result);
+  const results = [];
+
+  for (let i = 0; i < n; i++) {
+    result.push([]);
+  }
+  console.log(results);
 }
 matrix(4);
 module.exports = matrix;
