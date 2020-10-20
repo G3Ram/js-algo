@@ -19,7 +19,7 @@ function matrix(n) {
   const results = [];
 
   for (let i = 0; i < n; i++) {
-    result.push([]);
+    results.push([]);
   }
   console.log(results);
 }
