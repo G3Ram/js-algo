@@ -21,6 +21,8 @@ function matrix(n) {
   for (let i = 0; i < n; i++) {
     results.push([]);
   }
+
+  let counter = 1;
   console.log(results);
 }
 matrix(4);
