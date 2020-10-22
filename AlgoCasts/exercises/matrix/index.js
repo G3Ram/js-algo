@@ -23,6 +23,10 @@ function matrix(n) {
   }
 
   let counter = 1;
+  let startCol = 0;
+  let endCol = n - 1;
+  let startRow = 0;
+  let endRow = n - 1;
   console.log(results);
 }
 matrix(4);
