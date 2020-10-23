@@ -27,6 +27,8 @@ function matrix(n) {
   let endCol = n - 1;
   let startRow = 0;
   let endRow = n - 1;
+
+  while (startCol <= endCol && startRow <= endRow) {}
   console.log(results);
 }
 matrix(4);
