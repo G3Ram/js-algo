@@ -28,7 +28,13 @@ function matrix(n) {
   let startRow = 0;
   let endRow = n - 1;
 
-  while (startCol <= endCol && startRow <= endRow) {}
+  while (startCol <= endCol && startRow <= endRow) {
+    // TOP ROW
+    for (let i = startCol; i < endCol; i++) {
+      // add the counter
+    }
+  }
+
   console.log(results);
 }
 matrix(4);
