@@ -31,7 +31,9 @@ function matrix(n) {
   while (startCol <= endCol && startRow <= endRow) {
     // TOP ROW
     for (let i = startCol; i < endCol; i++) {
+      results[startRow][i] = counter;
       // add the counter
+      counter++;
     }
   }
 
