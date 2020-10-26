@@ -35,6 +35,12 @@ function matrix(n) {
       // add the counter
       counter++;
     }
+    startRow++;
+    // RIGHT COL
+    for (let i = startRow + 1; i < endRow; i++) {
+      results[i][endCol] = counter;
+      counter++;
+    }
   }
 
   console.log(results);
