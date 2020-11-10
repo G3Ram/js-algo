@@ -22,7 +22,7 @@ var reformat = function (s) {
     } else if (letters.length === 1 && digits.length === 0) {
       return letters[0];
     }
-    console.log(`------ ${digits} ----- ${letters} --`);
+
     let isReformat =
       digits.length + 1 === letters.length ||
       letters.length + 1 === digits.length ||
@@ -42,13 +42,10 @@ var reformat = function (s) {
         }
       }
 
-      console.log(`------ ${digits} ----- ${letters} --`);
       if (digits.length > 0) {
         result = result.concat(digits);
-        console.log("------result is ------", result);
       } else if (letters.length > 0) {
         result = result.concat(letters);
-        console.log("------result is ------", result);
       }
       return result.join("");
     } else {
