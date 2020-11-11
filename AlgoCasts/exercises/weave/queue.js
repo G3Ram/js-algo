@@ -14,7 +14,13 @@ class Queue {
   }
 
   remove() {
+    console.log("Am i here??", this.data);
     return this.data.pop();
+  }
+
+  peek() {
+    const lastIndex = this.data.length - 1;
+    return this.data[lastIndex];
   }
 }
 
