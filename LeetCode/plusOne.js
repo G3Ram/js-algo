@@ -19,6 +19,7 @@ var plusOne = function (digits) {
       digits[i] = 0;
       digits.unshift(1);
       carryOver = 0;
+	  // ******* TESTING GIT ************
     } else if (digits[i] === 9 && carryOver === 1) {
       digits[i] = 0;
       carryOver = 1;
