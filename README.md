@@ -1,3 +1,3 @@
-# interview-prep
+# Challenges
 
 1. Fibonacci series - recursion
